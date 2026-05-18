@@ -2,8 +2,8 @@
 ymaps.ready(initMap);
 
 function initMap() {
-    // Координаты ресторана (замените на реальные координаты вашего ресторана)
-    const restaurantCoords = [55.751244, 37.618423]; // Москва, Красная площадь (пример)
+    // Координаты ресторана "Дюна" - Юбилейный проспект, 23В (Красноярск)
+    const restaurantCoords = [56.015913, 92.884607]; // Примерные координаты
     
     const map = new ymaps.Map("map", {
         center: restaurantCoords,
@@ -13,12 +13,12 @@ function initMap() {
 
     // Создаем метку с кастомным дизайном
     const placemark = new ymaps.Placemark(restaurantCoords, {
-        hintContent: 'Ресторан "Grand Palace"',
+        hintContent: 'Ресторан "Дюна"',
         balloonContent: `
             <div style="padding: 10px;">
-                <h3 style="margin: 0 0 10px 0; color: #d4a574;">Ресторан "Grand Palace"</h3>
-                <p style="margin: 0;">г. Москва, ул. Праздничная, дом 1</p>
-                <p style="margin: 10px 0 0 0; font-weight: bold;">Время сбора гостей: 15:00</p>
+                <h3 style="margin: 0 0 10px 0; color: #d4a574;">Ресторан "Дюна"</h3>
+                <p style="margin: 0;">Юбилейный проспект, 23В</p>
+                <p style="margin: 10px 0 0 0; font-weight: bold;">Время сбора гостей: 14:00</p>
             </div>
         `
     }, {
