@@ -2,8 +2,8 @@
 ymaps.ready(initMap);
 
 function initMap() {
-    // Координаты ресторана "Дюна" - Юбилейный проспект, 23В (Красноярск)
-    const restaurantCoords = [56.015913, 92.884607]; // Примерные координаты
+    // Координаты ресторана "Дюна" - Юбилейный проспект, 23В (Москва)
+    const restaurantCoords = [55.749720, 37.861789];
     
     const map = new ymaps.Map("map", {
         center: restaurantCoords,

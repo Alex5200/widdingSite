@@ -1,0 +1,17 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "description": "Свадебный сайт-приглашение для Александра и Алевтины",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "wedding",
+    "invitation",
+    "сайт-визитка"
+  ],
+  "author": "Alexander & Alevtina",
+  "license": "MIT"
+}
