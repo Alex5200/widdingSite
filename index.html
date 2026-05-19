@@ -6,16 +6,28 @@
     <title>Наша Свадьба | Александр и Алевтина</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-heart">
+            <span>💕</span>
+        </div>
+        <p class="loader-text">Загрузка...</p>
+    </div>
+
+    <!-- Falling Petals Background -->
+    <div class="falling-petals" id="fallingPetals"></div>
+
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
         <div class="hero-content">
             <p class="hero-date">15 Июля 2025</p>
-            <h1 class="hero-title">Александр <span>&</span> Алевтина</h1>
+            <h1 class="hero-title"><span class="name-first">Александр</span> <span class="ampersand">&</span> <span class="name-second">Алевтина</span></h1>
             <p class="hero-subtitle">Приглашаем вас на нашу свадьбу!</p>
             <a href="#details" class="btn-primary">Подробнее</a>
         </div>
@@ -28,21 +40,30 @@
     <section class="couple" id="couple">
         <div class="container">
             <h2 class="section-title">Жених и Невеста</h2>
+            <div class="decorative-divider">
+                <span class="leaf">🌿</span>
+                <span class="heart">💕</span>
+                <span class="leaf">🌿</span>
+            </div>
             <div class="couple-grid">
-                <div class="couple-card">
+                <div class="couple-card" data-aos="fade-right">
                     <div class="photo-frame">
+                        <div class="frame-corners"></div>
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Александр" class="couple-photo">
+                        <div class="photo-overlay"></div>
                     </div>
                     <h3>Александр</h3>
                     <p class="couple-role">Жених</p>
                     <p class="couple-description">Любящий сын, верный друг и скоро — лучший муж!</p>
                 </div>
                 <div class="couple-divider">
-                    <span>&</span>
+                    <span class="divider-heart">💖</span>
                 </div>
-                <div class="couple-card">
+                <div class="couple-card" data-aos="fade-left">
                     <div class="photo-frame">
+                        <div class="frame-corners"></div>
                         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop" alt="Алевтина" class="couple-photo">
+                        <div class="photo-overlay"></div>
                     </div>
                     <h3>Алевтина</h3>
                     <p class="couple-role">Невеста</p>
@@ -56,21 +77,35 @@
     <section class="details" id="details">
         <div class="container">
             <h2 class="section-title">Детали События</h2>
+            <div class="decorative-divider">
+                <span class="leaf">🌿</span>
+                <span class="heart">💕</span>
+                <span class="leaf">🌿</span>
+            </div>
             <div class="details-grid">
-                <div class="detail-card">
-                    <div class="detail-icon">📅</div>
+                <div class="detail-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="detail-icon-wrapper">
+                        <div class="detail-icon">📅</div>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h3>Дата</h3>
                     <p class="detail-text">15 Июля 2025</p>
                     <p class="detail-subtext">Вторник</p>
                 </div>
-                <div class="detail-card">
-                    <div class="detail-icon">⏰</div>
+                <div class="detail-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="detail-icon-wrapper">
+                        <div class="detail-icon">⏰</div>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h3>Время сбора гостей</h3>
                     <p class="detail-text">14:00</p>
                     <p class="detail-subtext">Начало вечера</p>
                 </div>
-                <div class="detail-card">
-                    <div class="detail-icon">📍</div>
+                <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="detail-icon-wrapper">
+                        <div class="detail-icon">📍</div>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h3>Место проведения</h3>
                     <p class="detail-text">Ресторан "Дюна"</p>
                     <p class="detail-subtext">Юбилейный проспект, 23В</p>
@@ -106,37 +141,52 @@
     <section class="program">
         <div class="container">
             <h2 class="section-title">Программа Дня</h2>
+            <div class="decorative-divider">
+                <span class="leaf">🌿</span>
+                <span class="heart">💕</span>
+                <span class="leaf">🌿</span>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-time">14:00</div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-time">
+                        <span class="time-circle">14:00</span>
+                    </div>
                     <div class="timeline-content">
                         <h4>Сбор гостей</h4>
                         <p>Welcome-зона, легкие закуски и напитки</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">15:00</div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-time">
+                        <span class="time-circle">15:00</span>
+                    </div>
                     <div class="timeline-content">
                         <h4>Торжественная церемония</h4>
                         <p>Обмен кольцами и клятвами</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">16:00</div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-time">
+                        <span class="time-circle">16:00</span>
+                    </div>
                     <div class="timeline-content">
                         <h4>Праздничный банкет</h4>
                         <p>Ужин, тосты и поздравления</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">20:00</div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-time">
+                        <span class="time-circle">20:00</span>
+                    </div>
                     <div class="timeline-content">
                         <h4>Торт и салют</h4>
                         <p>Сладкое завершение вечера</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">22:00</div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+                    <div class="timeline-time">
+                        <span class="time-circle">22:00</span>
+                    </div>
                     <div class="timeline-content">
                         <h4>Завершение вечера</h4>
                         <p>Бенгальские огни и прощальные слова</p>
@@ -150,8 +200,13 @@
     <section class="rsvp">
         <div class="container">
             <h2 class="section-title">Подтвердите Присутствие</h2>
+            <div class="decorative-divider">
+                <span class="leaf">🌿</span>
+                <span class="heart">💕</span>
+                <span class="leaf">🌿</span>
+            </div>
             <p class="rsvp-text">Пожалуйста, подтвердите ваше присутствие до 1 июля 2025</p>
-            <form class="rsvp-form" id="rsvpForm">
+            <form class="rsvp-form" id="rsvpForm" data-aos="zoom-in">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Ваше имя и фамилия" required>
                 </div>
@@ -176,6 +231,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <div class="footer-hearts">
+                <span>💕</span>
+                <span>💗</span>
+                <span>💕</span>
+            </div>
             <p class="footer-text">С любовью, Александр и Алевтина</p>
             <p class="footer-date">15.07.2025</p>
             <div class="hashtag">#СвадьбаАиА2025</div>
@@ -184,6 +244,9 @@
 
     <!-- Yandex Maps API -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=your-api-key&lang=ru_RU" type="text/javascript"></script>
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
