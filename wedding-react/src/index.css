@@ -1,0 +1,71 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary-color: #d4a5a5;
+  --primary-dark: #c49292;
+  --primary-light: #e8c4c4;
+  --accent-color: #ffb7b2;
+  --secondary-color: #fff5f5;
+  --text-dark: #4a4a4a;
+  --text-light: #8b8b8b;
+  --white: #ffffff;
+  --bg-light: #fff9f9;
+  --bg-gradient: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-body: 'Montserrat', sans-serif;
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-soft: 0 10px 40px rgba(212, 165, 165, 0.15);
+  --shadow-hover: 0 20px 60px rgba(212, 165, 165, 0.25);
+
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color-scheme: light dark;
+  color: var(--text-dark);
+  background: var(--bg-light);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

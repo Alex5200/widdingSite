@@ -73,9 +73,32 @@ a {
     visibility: hidden;
 }
 
+.page-loader[style*="display: none"] {
+    display: none !important;
+}
+
 .loader-heart {
     font-size: 5rem;
     animation: loaderHeartBeat 1.2s ease-in-out infinite;
+    position: relative;
+}
+
+.loader-heart::before {
+    content: '✨';
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    font-size: 2rem;
+    animation: twinkle 1.5s ease-in-out infinite;
+}
+
+.loader-heart::after {
+    content: '💫';
+    position: absolute;
+    bottom: -10px;
+    left: -25px;
+    font-size: 1.5rem;
+    animation: twinkle 2s ease-in-out infinite reverse;
 }
 
 @keyframes loaderHeartBeat {
