@@ -2,27 +2,52 @@
 # Dependencies
 node_modules/
 
-# Environment
+# Build outputs
+dist/
+build/
+coverage/
+htmlcov/
+
+# Environment variables
 .env
 .env.local
-*.env.*
+.env.*
 
-# Logs and temp files
+# Logs
 *.log
-*.tmp
 
-# Editors
+# IDE files
 .vscode/
 .idea/
+*.swp
+*.swo
+*.tmp
 
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Coverage
+.coverage
+
+# Distribution / packaging
 .Python
-venv/
-.venv/
-.env
-.env.local
+*.egg-info/
+.eggs/
+.installed.cfg
+*.egg
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Vite specific
+!.github
+*.local
+
+# React/Vite build artifacts
+**/dist/**
+**/build/**
 ```
