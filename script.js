@@ -1,3 +1,25 @@
+// ===== Page Loader =====
+window.addEventListener('load', function() {
+    const loader = document.getElementById('pageLoader');
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+            // Удаляем лоадер из DOM после завершения анимации
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 800);
+        }, 1500); // Показываем лоадер минимум 1.5 секунды для красоты
+    }
+    
+    // Инициализируем AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out-cubic',
+        once: true,
+        offset: 100
+    });
+});
+
 // ===== Yandex Maps Initialization =====
 ymaps.ready(initMap);
 
