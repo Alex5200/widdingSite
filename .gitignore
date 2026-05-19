@@ -2,52 +2,66 @@
 # Dependencies
 node_modules/
 
-# Build outputs
-dist/
+# Build artifacts
 build/
-coverage/
-htmlcov/
+dist/
+*.js.map
 
-# Environment variables
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# Logs
-*.log
-
-# IDE files
+# Editors
 .vscode/
 .idea/
 *.swp
-*.swo
-*.tmp
-
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Coverage
-.coverage
-
-# Distribution / packaging
-.Python
-*.egg-info/
-.eggs/
-.installed.cfg
-*.egg
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Vite specific
-!.github
-*.local
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# React/Vite build artifacts
-**/dist/**
-**/build/**
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Distribution / packaging
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+
+# Compiled binary files
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.out
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
 ```
